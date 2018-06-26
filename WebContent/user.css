@@ -1,0 +1,50 @@
+h1{
+	color:black;
+	font-size:50px;
+	font-family:"FZShuTi";
+}
+
+body{
+	background-color: #D1DAE9;
+}
+
+
+#p{
+	font-family:Monospace;
+	font-weight:900;
+	
+}
+
+
+
+button{
+	font-family:STXingkai;
+		font-size:15px;
+		font-weight:900;
+		color:#668686;
+}
+
+input{
+		color:006699;
+		font-family:KaiTi_GB2312;
+		font-size:13px;
+		
+}
+
+#table1{
+	font-family:FangSong_GB2312;
+	  position: relative;
+	  left: 30px;
+	  top: 10px;
+	 
+}
+#foot{
+	position:absolute;
+	  left:50px;
+	  top: 400px;
+	 
+}
+span{
+	font-family:Cursive;
+	font-size:15;
+}

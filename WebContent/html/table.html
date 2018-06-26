@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function add(){
+
+	var newElement=document.createElement("tr");
+	newElement.align="center";
+	newElement.innerHTML="  <td width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td>   <td  width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td>   <td width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td> <td> <button onclick='add()'>增加</button> <button onclick='deletes()'>删除</button> </td>";
+	
+	document.getElementById("table1").appendChild(newElement);
+}
+
+function deletes(){
+
+var list=document.getElementById("table1");
+list.removeChild(list.childNodes[2]);
+}
+
+</script>
+</head>
+
+<body>
+<table border=0.1 cellspacing=0 high=20 id="table1" >
+<tr>  <th>账号</th>  <th>姓名</th> <th>角色</th> <th>所属组织</th> <th>手机</th><th>固定电话</th><th>Email</th> <th>最后登陆时间</th> <th>备注</th> </tr>
+<tr>  <td width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>   <td  width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>   <td width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>  <td> <button onclick="add()">增加</button> <button onclick="deletes()">删除</button> </td> </tr>
+
+</table>
+</body>
+</html>

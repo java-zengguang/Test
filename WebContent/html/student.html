@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="user.css" />
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+	function addLine(){
+	//var table=document.getElementById("table1");
+	//var length= table.childNodes.length;
+	var newElement=document.createElement("tr");
+	newElement.align="center";
+	newElement.innerHTML=" <td width='5%'> <input type='checkbox' name='test'/> </td> <td width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td>   <td  width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td>   <td width='10%'>&nbsp;</td> <td width='10%'>&nbsp;</td>  <td width='10%'>&nbsp;</td>";
+	
+	document.getElementById("table1").appendChild(newElement);
+	}
+</script>
+
+</head>
+
+
+
+
+<body >
+
+<h1 style="text-align:center">学生管理</h1>
+
+ <p id="p" "center">&nbsp;&nbsp;账号：<input type="text"  /> &nbsp;&nbsp; 姓名：<input type="text" />  &nbsp;&nbsp;账号：<input type="text" />&nbsp;&nbsp; 所属组织：<input type="text" />&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="查询"/> &nbsp;&nbsp; <input type="reset" value="重置"/> </p>
+<div id="botton">
+ <p> &nbsp;&nbsp &nbsp;&nbsp <button  onclick="alert('Hello World!')" type="button">查询</button> &nbsp;&nbsp <button>修改</button> &nbsp;&nbsp <button type="button" onclick="alert('删除成功！')">删除</button>  <button onclick="addLine()">添加一行</button> </p>
+</div>
+ <p>
+ 
+<div id="table">
+<table border=0.1 cellspacing=0 high=20 id="table1" >
+<tr><th ><input type="checkbox" name="test"/> </th> <th id="b">账号</th>  <th>姓名</th> <th>性别</th> <th>年龄</th> <th>联系人手机号</th><th>班级</th><th>Email</th> <th>政治面貌</th> <th>备注</th> </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>   <td  width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>   <td width="10%">&nbsp;</td> <td width="10%">&nbsp;</td>  <td width="10%">&nbsp;</td>   
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+<tr align="center"> <td width="5%"> <input type="checkbox" name="test"/> </td> <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   <td>&nbsp;</td> <td>&nbsp;</td>  <td>&nbsp;</td>   </tr>
+
+</table>
+</div >
+
+</body>
+
+</html>

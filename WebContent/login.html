@@ -1,0 +1,148 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+<title>防灾科技学院人事信息查询系统登陆</title>
+<script type="text/javascript">
+
+	function checkUser(obj,div){
+	var str=obj.value.trim();
+	if(str.length!=0){
+		reg = /^[\u4e00-\u9fa5a-zA-Z0-9]{1,10}$/;
+		if(!reg.test(str)){
+	div.innerHTML = " <font id='font2'>对不起，字符长度格式不正确!</font>";
+		}
+	}else{
+	div.innerHTML = " <font id='font2'>请输入用户名</font>";
+	}
+
+	}
+	
+	
+
+	
+	 function addLine(){
+	 var newElement=document.createElement("tr");
+	 newElement.innerHTML("<td>123</td>");
+	 }
+	 
+</script>
+</head>
+<body>
+
+<div id="header">
+<h2 >防灾科技学院人事信息查询系统登陆</h2>
+</div>
+
+<div id="nav">
+<p>
+
+<form action="/PersonnelInquiry/Login" method="post">
+<span>用户名：</span><span><input name="username" type="text" id="user"   value="" placeholder="请输入用户名" onfocus="this.placeholder=''"     onblur="checkUser(this,userOut)" /></span>
+</p><p>
+<span id="userOut">  <font id="font1">请输入字符长度小于10 </font> </span>
+</p><p>
+<span>密&nbsp;码：</span> <span><input name="password" type="password" id="password" value="" placeholder="请输入密码" onfocus="this.placeholder=''"   onblur="this.placeholder='请输入密码'" /> </span> 
+
+</p><p>
+</p><p>
+<span><input type="submit" value="登陆"></span> &nbsp;&nbsp;&nbsp;&nbsp;  <input type="reset" value="重置" /> 
+</form>
+</p><p>
+<a href="http://www.baidu.com" >忘记密码</a>
+</p><p>
+<a href="/PersonnelInquiry/html/RegistUsers.jsp" >注册</a>
+</p><p>
+</p>
+</div>
+
+<div id="section">
+<script>
+document.getElementById("section").style.color="blue";
+</script>
+<h1>简介</h1>
+<p>
+ &nbsp;&nbsp;防灾科技学院隶属于中国地震局，是全国仅有的以防灾减灾高等教育为主、学科门类齐全的综合性全日制普通高等学校。学院始建于1975年。
+  学院面向全国招生，现有全日制在校生8000余人。
+</p>
+<p>
+ &nbsp;&nbsp;学院坚持“人本治校、特色立校、人才强校、和谐兴校”的办学理念和“优化结构、深化改革、强化特色、提高质量”的人才培养思路，
+立足防震减灾行业，面向经济社会发展，逐步形成了以全日制本科教育为主体，兼有硕士研究生教育、成人学历教育、
+行业技术培训等并存的多层次、多类型、多形式的现代办学体系，培养具有强烈社会责任感、较强创新精神和实践能力的高级应用型人才。
+</p>
+<br>
+<br>
+<br>
+<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+<h1>Introduction </h1>
+<p>
+&nbsp;The school is affiliated to China seismological bureau, and is the only comprehensive full-time 
+institution of higher learning in the country with a comprehensive range of disciplines.The college 
+was founded in 1975.
+The college is open to nationwide enrollment, and there are more than 8,000 full-time students.
+</p>
+&nbsp;The college adheres to the concept of "people-oriented school, distinctive schools, strong talent schools,
+harmonious schools" and "optimizing structure, deepening reform, strengthening characteristics and improving 
+quality". Based on the industry of earthquake prevention and disaster reduction, oriented towards economic and 
+social development, it has gradually formed a full-time undergraduate education as the main body, with a master's 
+degree education, adult education, education, Industry technical training and so on of multi-level, multi-type,
+multiple forms of modern school system, cultivate a strong sense of social responsibility, strong innovation 
+spirit and practice ability of senior applied talents.
+<p>
+
+</p>
+
+
+
+</div>
+
+<div id="footer">
+<p>
+防灾科技学院  版权 
+</p>
+</div>
+
+
+<style>
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:1vw;
+}
+
+ #nav #font1 {
+color:blue;
+font-size:10px;
+}
+
+ #nav #font2{
+ color:red;
+font-size:10px;
+ }
+
+#nav {
+    line-height:3vw;
+    background-color:#eeeeee;
+    height:35vw;
+    width:20vw;
+    float:left;
+    padding:15px; 
+}
+
+#section {
+    width:50vw;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:1vw; 
+}
+</style>
+
+</body>
+</html>
